@@ -112,3 +112,15 @@ let applyDiscount = function(price, discount) {
 
 //Logging the final price after applying the discount to the console - the values can be changed
 console.log(`Final discount price: $${applyDiscount(200, 0.25)}`);
+
+//Task 10 - Loyalty Points
+
+//Declaring an arrow function to calculate loyalty points based on the purchase amount
+//Calculates loyalty points 
+let calculatePoints = purchaseAmount => {
+    return Math.floor(purchaseAmount / 10); //1 point per $10 spent
+};
+
+//Calling the function and logging the loyalty points amount to the console - value can be changed
+let points = calculatePoints(250); //Purchase amount is 250
+console.log(`Loyalty points: ${points}`);
