@@ -92,3 +92,12 @@ let foundCustomer = customers.find(customer => customer === "Charlie");
 
 //Logging the found customer to the console if they are in the array
 console.log(`Found customer: ${foundCustomer}`);
+
+//Task 8 - Tax Calculation
+function calculateTax(amount, taxRate) {
+    //Multiplying the amount by the tax rate to find the tax
+    return amount * taxRate;
+}
+
+//Logging the tax value for $90 at a 8% tax rate - the values can be changed
+console.log(`Tax amount: $${calculateTax(90, 0.08)}`);
