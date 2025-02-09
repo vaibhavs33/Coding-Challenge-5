@@ -70,3 +70,14 @@ let availableStock = inventory.filter(quantity => quantity > 0);
 
 //Logging the array of available stock to the console
 console.log(`Available stock: ${availableStock}`);
+
+//Task 6 - Revenue Calculation
+
+//Declaring an array representing sales revenue from different transactions
+let sales = [500, 300, 200, 400];
+
+//Adding up all sales amounts using the reduce method to calculate the total revenue
+let totalRevenue = sales.reduce((total, sale) => total + sale, 0);
+
+//Logging the total revenue to the console
+console.log(`Total revenue: $${totalRevenue}`);
