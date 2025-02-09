@@ -28,3 +28,23 @@ const order = {
 
 //Calling the method to display order details in the console
 order.displayOrder();
+
+//Task 3 - Shopping Cart
+
+//Declaring an array containing 3 product names
+let cartItems = ["Milk", "Bread", "Eggs"];
+
+//Adding a new product to the cart
+cartItems.push("Cheese");
+
+//Removing the last item from the cart (Cheese)
+cartItems.pop();
+
+//Adding an item at the beginning of the cart
+cartItems.unshift("Butter");
+
+//Removing the first item from the cart (Butter)
+cartItems.shift();
+
+//Logging the final array to the console
+console.log(`Final cart items: ${cartItems}`);
