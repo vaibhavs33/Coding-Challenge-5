@@ -101,3 +101,14 @@ function calculateTax(amount, taxRate) {
 
 //Logging the tax value for $90 at a 8% tax rate - the values can be changed
 console.log(`Tax amount: $${calculateTax(90, 0.08)}`);
+
+//Task 9 - Discount Application
+
+//Declaring a function expression to apply a discount to a price
+let applyDiscount = function(price, discount) {
+    //Subtracting the discount percentage from the original price
+    return price - (price * discount);
+};
+
+//Logging the final price after applying the discount to the console - the values can be changed
+console.log(`Final discount price: $${applyDiscount(200, 0.25)}`);
